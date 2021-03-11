@@ -1,26 +1,40 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div>
+<Navbar />
+<div class="container">
+  
+  <h1 class="text-center">Digimon Api</h1>
+
+  <Niveles />
+  <Buscador />
+  <CardList />
+
+</div>
+<Footer />
+</div>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
+import Footer from './components/Footer'
+import Navbar from './components/Navbar'
+import CardList from './components/CarList'
+import Buscador from './components/Buscador'
+import Niveles from './components/Niveles'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    CardList,
+    Niveles,
+    Buscador,
+    Navbar,
+    Footer
   }
 }
+
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
